@@ -1,24 +1,24 @@
-name: 缺陷
-description: 功能坏了、表现不对，或和预期不一致。
-title: "[缺陷] "
+name: 碰到问题
+description: 用的时候哪里不对，或和你想的不一样
+title: "[问题] "
 labels: ["bug"]
 body:
   - type: markdown
     attributes:
       value: |
-        先搜索已有 Issue。账号、订单、安全和任何笔记内容请不要写在这里。
+        谢谢你愿意写下来。先看看有没有人说过类似的事。账号、订单这些和个人相关的，走网站会更方便。
   - type: checkboxes
     id: searched
     attributes:
-      label: 搜索过了
+      label: 先看过了
       options:
-        - label: 我已经搜索过现有 Issue，没有找到同一件事
+        - label: 我先看过现有反馈，没有找到同一件事
           required: true
   - type: input
     id: core-version
     attributes:
       label: FLO.W Core 版本
-      description: 在 Obsidian 设置里看得到，例如 1.0.5
+      description: 在 Obsidian 设置里能看到，例如 1.0.5
       placeholder: 1.0.5
     validations:
       required: true
@@ -26,14 +26,14 @@ body:
     id: obsidian-version
     attributes:
       label: Obsidian 版本
-      description: 设置 → 关于 里能看到
+      description: 设置里的「关于」能看到
       placeholder: 1.8.10
     validations:
       required: true
   - type: dropdown
     id: os
     attributes:
-      label: 系统
+      label: 你在用的系统
       options:
         - macOS
         - Windows
@@ -46,15 +46,15 @@ body:
   - type: textarea
     id: happened
     attributes:
-      label: 发生了什么
-      description: 用一句话说清哪里不对。不要贴笔记正文或 Vault 路径。
+      label: 当时怎样
+      description: 用你自己的话说清哪里别扭就好，不用写得很正式
     validations:
       required: true
   - type: textarea
     id: steps
     attributes:
-      label: 怎样复现
-      description: 别人按这些步骤也能碰到最好。
+      label: 怎么碰到的
+      description: 如果能一步步写下来，我会比较容易跟上
       placeholder: |
         1.
         2.
@@ -64,20 +64,20 @@ body:
   - type: textarea
     id: expected
     attributes:
-      label: 你期望怎样
+      label: 你本来希望怎样
     validations:
       required: true
   - type: textarea
     id: extra
     attributes:
-      label: 补充
-      description: 可以拖进截图。请先遮住个人内容和路径。
+      label: 还可以补的
+      description: 截图可以直接拖进来。如果里面有笔记内容或路径，遮一下就行
     validations:
       required: false
   - type: checkboxes
     id: privacy
     attributes:
-      label: 公开内容
+      label: 公开给大家看
       options:
-        - label: 这张单子里没有 Vault 路径、笔记正文、订单号、验证码或账号隐私
+        - label: 里面没有笔记原文、库的路径或订单信息，其他人看着也安心
           required: true

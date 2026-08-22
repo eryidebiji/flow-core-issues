@@ -1,44 +1,44 @@
-name: 功能建议
-description: 希望增加、改变或补上某个能力。
-title: "[功能] "
+name: 一个想法
+description: 希望多出来的能力，或哪里可以更好
+title: "[想法] "
 labels: ["feature"]
 body:
   - type: markdown
     attributes:
       value: |
-        先搜索已有 Issue。有类似建议就去那张单子补充或点个表情。
+        谢谢你愿意把想法留下来。如果已有人提过类似的，去那条下面补一句或点个表情就好。
   - type: checkboxes
     id: searched
     attributes:
-      label: 搜索过了
+      label: 先看过了
       options:
-        - label: 我已经搜索过现有 Issue，没有找到同一建议
+        - label: 我先看过现有反馈，没有找到同一想法
           required: true
   - type: textarea
     id: want
     attributes:
       label: 你希望怎样
-      description: 说清想多出来的能力，不必给实现方案。
+      description: 说说想多出来的那一步就好，不用想实现方法
     validations:
       required: true
   - type: textarea
     id: scene
     attributes:
-      label: 用在什么场合
-      description: 你当时在做什么，现在缺了哪一步。不要贴真实笔记内容。
+      label: 什么时候会用到
+      description: 你当时在做什么，缺了哪一下。不用贴真实笔记
     validations:
       required: true
   - type: textarea
     id: now
     attributes:
-      label: 现在怎么凑合
-      description: 没有变通做法也可以写「没有」。
+      label: 现在你怎么处理
+      description: 没有变通也可以写「没有」
     validations:
       required: false
   - type: checkboxes
     id: privacy
     attributes:
-      label: 公开内容
+      label: 公开给大家看
       options:
-        - label: 这张单子里没有 Vault 路径、笔记正文、订单号、验证码或账号隐私
+        - label: 里面没有笔记原文、库的路径或订单信息，其他人看着也安心
           required: true
