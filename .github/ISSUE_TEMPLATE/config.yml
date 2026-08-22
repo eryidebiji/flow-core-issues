@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 账号、订单与客服
+    url: https://21obsidian.com
+    about: 登录、设备、订单、退款、权益开通请走网站，不要发到公开 Issue。
+  - name: 安全问题
+    url: https://21obsidian.com
+    about: 安全漏洞请私下联系网站客服，不要发到公开 Issue。

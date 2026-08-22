@@ -1,0 +1,83 @@
+name: 缺陷
+description: 功能坏了、表现不对，或和预期不一致。
+title: "[缺陷] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        先搜索已有 Issue。账号、订单、安全和任何笔记内容请不要写在这里。
+  - type: checkboxes
+    id: searched
+    attributes:
+      label: 搜索过了
+      options:
+        - label: 我已经搜索过现有 Issue，没有找到同一件事
+          required: true
+  - type: input
+    id: core-version
+    attributes:
+      label: FLO.W Core 版本
+      description: 在 Obsidian 设置里看得到，例如 1.0.5
+      placeholder: 1.0.5
+    validations:
+      required: true
+  - type: input
+    id: obsidian-version
+    attributes:
+      label: Obsidian 版本
+      description: 设置 → 关于 里能看到
+      placeholder: 1.8.10
+    validations:
+      required: true
+  - type: dropdown
+    id: os
+    attributes:
+      label: 系统
+      options:
+        - macOS
+        - Windows
+        - iPhone
+        - iPad
+        - Android
+        - 不止一个系统
+    validations:
+      required: true
+  - type: textarea
+    id: happened
+    attributes:
+      label: 发生了什么
+      description: 用一句话说清哪里不对。不要贴笔记正文或 Vault 路径。
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 怎样复现
+      description: 别人按这些步骤也能碰到最好。
+      placeholder: |
+        1.
+        2.
+        3.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 你期望怎样
+    validations:
+      required: true
+  - type: textarea
+    id: extra
+    attributes:
+      label: 补充
+      description: 可以拖进截图。请先遮住个人内容和路径。
+    validations:
+      required: false
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: 公开内容
+      options:
+        - label: 这张单子里没有 Vault 路径、笔记正文、订单号、验证码或账号隐私
+          required: true
