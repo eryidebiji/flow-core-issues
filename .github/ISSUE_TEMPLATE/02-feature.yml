@@ -1,44 +1,42 @@
-name: 一个想法
-description: 希望多出来的能力，或哪里可以更好
-title: "[想法] "
+name: 功能建议
+description: 希望增加或调整的能力
+title: "[功能] "
 labels: ["feature"]
 body:
   - type: markdown
     attributes:
       value: |
-        谢谢你愿意把想法留下来。如果已有人提过类似的，去那条下面补一句或点个表情就好。
+        先搜索有没有相同建议。有的话在原条目下补充或点表情。
   - type: checkboxes
     id: searched
     attributes:
-      label: 先看过了
+      label: 搜索
       options:
-        - label: 我先看过现有反馈，没有找到同一想法
+        - label: 已搜索现有 Issue，没有相同建议
           required: true
   - type: textarea
     id: want
     attributes:
-      label: 你希望怎样
-      description: 说说想多出来的那一步就好，不用想实现方法
+      label: 希望怎样
     validations:
       required: true
   - type: textarea
     id: scene
     attributes:
-      label: 什么时候会用到
-      description: 你当时在做什么，缺了哪一下。不用贴真实笔记
+      label: 使用场合
     validations:
       required: true
   - type: textarea
     id: now
     attributes:
-      label: 现在你怎么处理
-      description: 没有变通也可以写「没有」
+      label: 现在的做法
+      description: 没有可以写「没有」
     validations:
       required: false
   - type: checkboxes
     id: privacy
     attributes:
-      label: 公开给大家看
+      label: 公开内容
       options:
-        - label: 里面没有笔记原文、库的路径或订单信息，其他人看着也安心
+        - label: 未包含笔记原文、库路径、订单号或验证码
           required: true

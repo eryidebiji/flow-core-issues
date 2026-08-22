@@ -1,3 +1,3 @@
-# 安全相关
+# 安全问题
 
-如果发现可能影响他人数据或账号安全的事，请走 [21obsidian.com](https://21obsidian.com) 私下告诉我，先不要发在公开讨论里。
+安全问题请通过 [21obsidian.com](https://21obsidian.com) 私下联系，不要发在公开 Issue。

@@ -2,7 +2,7 @@ blank_issues_enabled: false
 contact_links:
   - name: 账号和订单
     url: https://21obsidian.com
-    about: 登录、设备、购买这些事，走网站能对上你的账号
-  - name: 安全相关
+    about: 登录、设备、购买事项走网站
+  - name: 安全问题
     url: https://21obsidian.com
-    about: 这类事更适合私下说一声
+    about: 安全问题私下联系
