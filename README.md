@@ -1,6 +1,6 @@
 # FLO.W Core 反馈
 
-这个仓库用来收集 FLO.W Core 的缺陷和功能建议。产品在 [21obsidian.com](https://21obsidian.com)，源码不在这个仓库。
+FLO.W Core 是闭源软件。这个仓库用来收集缺陷和功能建议，源码不在这里。产品在 [21obsidian.com](https://21obsidian.com)。
 
 ## 怎么写
 
